@@ -7,17 +7,17 @@
       name="email"
       v-model="email"
       placeholder="email" />
-    <br>
+      <br>
     <input
       type="password"
       name="password"
       v-model="password"
       placeholder="password" />
-    <br>
+      <br>
     <button
-      @click="register">
-      Register
-      </button>
+    @click="register">
+    Register
+    </button>  
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     async register () {
-      const response = await AuthenticationService.register({
+      await AuthenticationService.register({
         email: this.email,
         password: this.password
       })
