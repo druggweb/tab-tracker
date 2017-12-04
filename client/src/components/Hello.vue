@@ -25,7 +25,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App Testing Nov 17'
+      msg: 'Vue.js Tab Tracker App'
     }
   }
 }
